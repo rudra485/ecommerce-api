@@ -18,7 +18,6 @@ from app.core.security import get_current_user
 def protected_test(current_user = Depends(get_current_user)):
     return {"message": f"Hello, user {current_user.email}!"}
 
-app.include_router(auth.router)
 app.include_router(products.router)
 app.include_router(cart.router)
 app.include_router(order.router)
