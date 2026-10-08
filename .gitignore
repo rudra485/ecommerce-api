@@ -4,3 +4,5 @@ __pycache__/
 *.pyc
 *.db
 .env
+check_orders.py
+test_webhook.py
